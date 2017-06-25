@@ -37,7 +37,12 @@ Make note of your:
 
 - Deploy the code to an HTTP node.js Azure Function https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-first-azure-function.
 - Don't forget to restore packeages (`npm install`) if not done automatically by CD.
-- Configure the application settings with the values obtained in previous step.
+- Configure the application settings with the values obtained in previous step. the names for the settings are:
+    - `subscriptionId`
+    - `appId`
+    - `appSecret`
+    - `tenantId`
+    - `tagName`
 - Make note of the function url.
 
 ### Configure Azure Activity Log Alerts
