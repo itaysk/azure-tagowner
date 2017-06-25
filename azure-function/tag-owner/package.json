@@ -1,0 +1,13 @@
+{
+  "name": "azure-tagowner",
+  "version": "1.0.0",
+  "description": "Automatically tag Azure resources with the user who created them",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "azure-arm-resource": "^2.0.0-preview",
+    "bluebird": "^3.5.0",
+    "zealit": "^2.3.0"
+  }
+}

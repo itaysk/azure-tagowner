@@ -1,0 +1,40 @@
+{
+    "schemaId": "Microsoft.Insights/activityLogs",
+    "data": {
+        "status": "Activated",
+        "context": {
+            "activityLog": {
+                "authorization": {
+                    "action": "Microsoft.Resources/subscriptions/resourcegroups/write",
+                    "scope": "/subscriptions/e4581b2e-9afa-4568-b3ff-6a6b3e178522/resourcegroups/t1"
+                },
+                "channels": "Operation",
+                "claims": "{\"aud\":\"https://management.core.windows.net/\",\"iss\":\"https://sts.windows.net/72f988bf-86f1-41af-91ab-2d7cd011db47/\",\"iat\":\"1497940940\",\"nbf\":\"1497940940\",\"exp\":\"1497944840\",\"_claim_names\":\"{\\\"groups\\\":\\\"src1\\\"}\",\"_claim_sources\":\"{\\\"src1\\\":{\\\"endpoint\\\":\\\"https://graph.windows.net/72f988bf-86f1-41af-91ab-2d7cd011db47/users/cc542398-0932-4b4c-9ac8-db5ee4b3d6bb/getMemberObjects\\\"}}\",\"http://schemas.microsoft.com/claims/authnclassreference\":\"1\",\"aio\":\"ASQA2/8DAAAA63WkF63HIgnlJGXqAuMIVaGXhNXO9baKx8SZWkPPnbM=\",\"http://schemas.microsoft.com/claims/authnmethodsreferences\":\"pwd,mfa\",\"appid\":\"c44b4083-3bb0-49c1-b47d-974e53cbdf3c\",\"appidacr\":\"2\",\"e_exp\":\"262800\",\"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname\":\"Shakury\",\"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname\":\"Itay\",\"in_corp\":\"true\",\"ipaddr\":\"5.29.165.123\",\"name\":\"Itay Shakury\",\"http://schemas.microsoft.com/identity/claims/objectidentifier\":\"cc542398-0932-4b4c-9ac8-db5ee4b3d6bb\",\"onprem_sid\":\"S-1-5-21-72051607-1745760036-109187956-140868\",\"platf\":\"5\",\"puid\":\"10033FFF80448B5E\",\"http://schemas.microsoft.com/identity/claims/scope\":\"user_impersonation\",\"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier\":\"Aer3CWPAoCrYER95EzQ8kpZu9bCDA7pJMQe56dpaAws\",\"http://schemas.microsoft.com/identity/claims/tenantid\":\"72f988bf-86f1-41af-91ab-2d7cd011db47\",\"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name\":\"itays@microsoft.com\",\"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn\":\"itays@microsoft.com\",\"ver\":\"1.0\"}",
+                "caller": "itays@microsoft.com",
+                "correlationId": "13133a3f-14e2-4e39-808f-a29d217cd116",
+                "description": "",
+                "eventSource": "Administrative",
+                "eventTimestamp": "2017-06-20T06:53:41.1380983+00:00",
+                "httpRequest": "{\"clientRequestId\":\"82a37c5a-9788-46fb-b1a3-6577bdd43042\",\"clientIpAddress\":\"5.29.96.20\",\"method\":\"PUT\"}",
+                "eventDataId": "ed9edf64-77e5-44af-a847-22716313158a",
+                "level": "Informational",
+                "operationName": "Microsoft.Resources/subscriptions/resourcegroups/write",
+                "operationId": "13133a3f-14e2-4e39-808f-a29d217cd116",
+                "properties": {
+                    "statusCode": "Created",
+                    "serviceRequestId": null,
+                    "responseBody": "{\"id\":\"/subscriptions/e4581b2e-9afa-4568-b3ff-6a6b3e178522/resourceGroups/t1\",\"name\":\"t1\",\"location\":\"westeurope\",\"properties\":{\"provisioningState\":\"Succeeded\"}}"
+                },
+                "resourceId": "/subscriptions/e4581b2e-9afa-4568-b3ff-6a6b3e178522/resourcegroups/t1",
+                "resourceGroupName": "t1",
+                "resourceProviderName": "Microsoft.Resources",
+                "status": "Succeeded",
+                "subStatus": "Created",
+                "subscriptionId": "e4581b2e-9afa-4568-b3ff-6a6b3e178522",
+                "submissionTimestamp": "2017-06-20T06:54:00.2704573+00:00",
+                "resourceType": "Microsoft.Resources/subscriptions/resourcegroups"
+            }
+        },
+        "properties": {}
+    }
+}
