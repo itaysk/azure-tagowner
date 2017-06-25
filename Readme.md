@@ -6,10 +6,10 @@ For more background on the problem, and alternative solutions, see here: http://
 ### Why tag resource groups, and not individual resources?
 Azure doesn't have a unified API to tag resources: All operations in Azure are segregated into 'Resource Providers', each is a micro-service style API with it's own schema, interface *and versioning*. Tagging is a Resource Provider specific operation (that just happens to exist and have the same signature across all resource providers). This means that in order to tag a resource, you have to know what kind of resource you are tagging, and use the specific version that this resource provider expects. This makes tagging resources hard and cumbersome. 
 
-## What if I really need resource level tagging?
+### What if I really need resource level tagging?
 It is possible to implement resource level tagging - you would have to indentify the resource type, call the providers API, get a list of supported versions, and call the generic resource api using the latest version. If your really need it - open an issue and I'll consider to implement this (or do it yourself and send a PR).
 
-## Created vs Modified
+### Created vs Modified
 The business logic in this POC implements a 'Created by' semantics. that is why we are only looking at resource group *creation* activities.
 If you need 'Modified by' semantics, you can change the code to look at more kinds of events, and update the tag with recent users.
 If you do that, take care not to find yourself in an infinite loop, where updating the tag value generates another alert for which you respond.
