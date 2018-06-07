@@ -1,4 +1,4 @@
-This is a POC to automatically tag Azure resource groups with the user who created them.  
+Automatically tag Azure resource groups with the user who created them.  
 For more background on the problem, and alternative solutions, see here: http://blog.itaysk.com/2017/05/25/determine-who-created-resources-in-azure.
 
 ## FAQ
