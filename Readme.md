@@ -46,6 +46,7 @@ Make note of your:
 ### Configure Azure Activity Log Alerts
 See here for an overview: https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitoring-activity-log-alerts
 Set the filter to: 
+
 Filter | Value
 --- | ---
 Event category | Administrative
