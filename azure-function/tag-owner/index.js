@@ -15,6 +15,7 @@ module.exports = function (context, req) {
     try {
         var rgName = eventPayload.context.activityLog.resourceGroupName;
         var userName = eventPayload.context.activityLog.caller;
+        var subscriptionId = eventPayload.context.activityLog.subscriptionId;
     }
     catch (err) {
         context.log.verbose("failed to extract mandatory data from event");
@@ -24,7 +25,6 @@ module.exports = function (context, req) {
 
     context.log.verbose("getting environment settings");
     try {
-        var subscriptionId = process.env["APPSETTING_subscriptionId"];
         var appId = process.env["APPSETTING_appId"];
         var appSecret = process.env["APPSETTING_appSecret"];
         var tenantId = process.env["APPSETTING_tenantId"];

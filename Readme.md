@@ -30,20 +30,18 @@ Create or locate a service principle with permissions on your subscription: http
 Make note of your:
 - SPN Id
 - SPN Key
-- Subscription Id
 - AAD tenant Id
 
 ### Azure Function
-
 - Deploy the code to an HTTP node.js Azure Function https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-first-azure-function.
 - Don't forget to restore packeages (`npm install`) if not done automatically by CD.
 - Configure the application settings with the values obtained in previous step. the names for the settings are:
-    - `subscriptionId`
     - `appId`
     - `appSecret`
     - `tenantId`
     - `tagName`
 - Make note of the function url.
+- The subscriptionId will be retrieved from the WebHook data
 
 ### Configure Azure Activity Log Alerts
 See here for an overview: https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitoring-activity-log-alerts
